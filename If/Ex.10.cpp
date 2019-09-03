@@ -1,10 +1,8 @@
-#include <iostream.h>
-#include <conio.h>
-#include <math.h>
-void main()
+#include <iostream>
+
+int main()
 {
     float custf, custoCons;
-    clrscr();
     cout << "\nDigite o custo de fábrica:";
     cin >> custf;
 
@@ -23,5 +21,5 @@ void main()
         custoCons = custf + custf * 15 / 100 + custf * 20 / 100;
         cout << custoCons;
     }
-    getch();
+    return 0;
 }

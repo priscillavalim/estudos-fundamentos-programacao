@@ -1,42 +1,43 @@
-#include <iostream.h>
-#include <conio.h>
-#include <math.h>
-void main()
-{
-    float preço, npreço;
-    clrscr();
-    cout << "\nDigite o preço do produto:";
-    cin >> preço; 
+#include <iostream>
 
-    if (preço <= 50)
+using namespace std;
+
+int main()
+{
+    float preco, npreco;
+   
+    cout << "\nDigite o preço do produto:";
+    cin >> preco; 
+
+    if (preco <= 50)
     {
-        npreço = preço + preço*5/100;
+        npreco = preco + preco*5/100;
     }
-    else if (preço > 50 && preço <=100)
+    else if (preco > 50 && preco <=100)
     {
-       npreço = preço + preço*10/100;
+       npreco = preco + preco*10/100;
     }
-    else if (preço > 100)
+    else if (preco > 100)
     {
-        npreço = preço + preço*15/100;
+        npreco = preco + preco*15/100;
     }
-    cout << "\nO novo preço é:" << npreço;
-    if (npreço <= 80)
+    cout << "\nO novo preço é:" << npreco;
+    if (npreco <= 80)
     {
         cout << "\nBarato";
     }
-    else if (npreço > 80 && npreço <= 120)
+    else if (npreco > 80 && npreco <= 120)
     {
         cout << "\nNormal";
     }
-    else if (npreço > 120 && npreço <= 200)
+    else if (npreco > 120 && npreco <= 200)
     {
         cout << "\nCaro";
     }
-    else if (npreço > 200)
+    else if (npreco > 200)
     {
         cout << "\nMuito caro";
     }
-    getch();
-}
 
+    return 0;
+}

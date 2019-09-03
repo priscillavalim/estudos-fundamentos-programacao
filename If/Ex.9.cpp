@@ -1,17 +1,15 @@
-#include <iostream.h>
-#include <conio.h>
-#include <math.h>
-void main()
+#include <iostream>
+
+int main()
 {
-    float saldo, cred1, cred2, cred3, cred4;
-    clrscr();
+    float saldo, cred1, cred2, cred3, cred4; 
     cout << "\nDigite o salário:";
     cin >> saldo;
 
-    cred1 = saldo * 30 / 100;
-    cred2 = saldo * 25 / 100;
-    cred3 = saldo * 20 / 100;
-    cred4 = saldo * 10 / 100;
+    cred1 = saldo*30/100;
+    cred2 = saldo*25/100;
+    cred3 = saldo*20/100;
+    cred4 = saldo*10/100;
 
     if (saldo < 400)
     {
@@ -27,7 +25,8 @@ void main()
     }
     else if (saldo <= 200)
     {
-        cout << "\nO crédito concedido é:" << cred4;
+        cout << "\nO crédito concedido é:" << cred4; 
     }
-    getch();
+    return 0;
 }
+

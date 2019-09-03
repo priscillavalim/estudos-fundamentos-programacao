@@ -1,15 +1,13 @@
-#include <iostream.h>
-#include <conio.h>
-#include <math.h>
-void main()
+#include <iostream>
+
+int main()
 {
     float num1, num2, op, media, dife, prod, divi;
-    clrscr();
     cout << "\nDigite o número 1:";
     cin >> num1;
     cout << "\nDigite o número 2:";
     cin >> num2;
-    cout << "\nDigite a opção desejada";
+    cout << "\nDigite a opção desejada (1-4):";
     cin >> op;
 
     media = num1 + num2 / 2;
@@ -37,5 +35,5 @@ void main()
     {
         cout << "\nO segundo número não pode ser igual a zero.";
     }
-    getch();
+    return 0;
 }

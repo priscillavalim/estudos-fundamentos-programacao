@@ -1,10 +1,8 @@
-#include <iostream.h>
-#include <conio.h>
-#include <math.h>
-void main()
+#include <iostream>
+
+int main()
 {
     float sal, aum1, aum2;
-    clrscr();
     cout << "\nDigite o salário:";
     cin >> sal;
 
@@ -19,5 +17,5 @@ void main()
     {
         cout << "\nO salário reajustado é:" << aum2;
     }
-    getch();
+    return 0;
 }
