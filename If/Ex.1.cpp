@@ -1,10 +1,9 @@
-#include <iostream.h>
-#include <conio.h>
-#include <math.h>
-void main()
+#include <iostream>
+
+int main()
 {
     float nota1, nota2, nota3, nota4, media;
-    clrscr();
+    
     cout << "\nDigite a nota 1:";
     cin >> nota1;
     cout << "\nDigite a nota 2:";
@@ -16,14 +15,13 @@ void main()
 
     media = nota1 + nota2 + nota3 + nota4/ 4; 
 
-    count << "\nA média aritimética das notas é:" << media; 
+    cout << "\nA média aritimética das notas é:" << media; 
 
-    If (media >= 7) 
+    if (media >= 7)
     {
-        cout << "\nAprovado";
-    }
-     
-    getch();
+        cout << "\nAprovado"; 
 
+    }
+    return 0;
 
 }
